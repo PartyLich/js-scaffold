@@ -19,7 +19,7 @@
     "test": "babel-tape-runner src/**/*.test.js test/**/*.test.js",
     "cov": "nyc babel-tape-runner src/**/*.test.js test/**/*.test.js",
     "lint": "eslint ./src && echo Lint Complete",
-    "lint:fix": "eslint ./src --fix",
+    "lint:fix": "eslint ./src --fix && echo Lint Fix Complete",
     "flow": "flow",
     "verify": "npm run -s test && flow && npm run -s lint",
     "watch:flow": "watch -t 'npx flow'",
