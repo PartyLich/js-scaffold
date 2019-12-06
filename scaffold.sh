@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-TARGET_DIR=$1
+TARGET_DIR=${1:-scaffold}
 
 function setup_project () {
   # save current dir
