@@ -30,7 +30,10 @@
     "lwatch": "watch -c -n 5 -t 'clear && npm run -s test && flow && npm run lint'"
   },
   "husky": {
-    "pre-commit": "npm run verify"
+    "hooks": {
+      "pre-commit": "npm run verify",
+      "pre-push": "npm test"
+    }
   },
   "dependencies": {
     "core-js": "^3.3.3",
